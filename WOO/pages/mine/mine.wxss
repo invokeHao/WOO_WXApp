@@ -1,0 +1,77 @@
+.bg-white {
+  background: #fff;
+}
+.scroll-view {
+  background:rgba(242,242,242,1);
+}
+.profile {
+  margin-bottom: 29rpx;
+  height: 225rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-avatar {
+  width:138rpx;
+  height:134rpx;
+  box-shadow:0px 8rpx 36rpx 0px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-info {
+  margin-left: 40rpx;
+  font-size:22rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(142,142,142,1);
+  line-height:31rpx;
+  letter-spacing:2rpx;
+  text-align: center;
+}
+.nickName {
+  margin-bottom: 14rpx;
+  font-size:43rpx;
+  font-family:PingFangSC-Semibold;
+  font-weight:600;
+  color:rgba(51,51,51,1);
+  line-height:51rpx;
+}
+.block {
+  padding: 10rpx 0;
+  margin-bottom: 29rpx;
+}
+.icon {
+  margin-right: 58rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.block-item {
+  padding: 0 54rpx 0 58rpx;
+  display: flex;
+  align-items: center;
+}
+.block-item-text {
+  font-size:29rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(92,92,92,1);
+  letter-spacing:2rpx;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 107rpx;
+  line-height: 107rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.block-item-text::after {
+  content: '';
+  position: absolute;
+  right: 10rpx;
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 5rpx solid rgba(157,157,157,0.25);
+  border-right: 5rpx solid rgba(157,157,157,0.25);
+  transform: rotate(45deg)
+}

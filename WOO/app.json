@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/article/article",
+    "pages/product/product"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "发现",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0dc585",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/find_unselect.png",
+        "selectedIconPath": "./images/find.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./images/mine.png",
+        "selectedIconPath": "./images/mine.png"
+      }
+    ]
+  }
+}

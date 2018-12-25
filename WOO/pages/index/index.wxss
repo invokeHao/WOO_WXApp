@@ -1,0 +1,192 @@
+image {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  padding-bottom: 20rpx;
+}
+.time {
+  margin: 20rpx auto 0;
+  width:248rpx;
+  height:54rpx;
+  line-height: 54rpx;
+  background:rgba(51,51,51,0.85);
+  text-align: center;
+  border-radius: 54rpx;
+
+  font-size:18rpx;
+  font-family:FZLANTY_XIANJW--GB1-0;
+  color:rgba(238,238,238,1);
+  letter-spacing:4rpx;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product_image {
+  width: 268rpx;
+  height: 100%;
+}
+.flex-item1 {
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  width:690rpx;
+  height:268rpx;
+  box-shadow:0px 18rpx 36rpx 0px rgba(0,0,0,0.1);
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.product-text-wrap {
+  padding: 29rpx 20rpx;
+  width: 422rpx;
+  font-size:29rpx;
+  font-family:FZLANTY_XIANJW--GB1-0;
+  color:rgba(23,31,36,1);
+  line-height:38rpx;
+  letter-spacing:2rpx;
+  box-sizing: border-box;
+}
+.layer {
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.text-layer {
+  display: flex;
+  align-items: center;
+  background:rgba(0,0,0,0.6);
+
+  font-family:PingFangSC-Medium;
+  font-size: 30rpx;
+  line-height:42rpx;
+  color: #fff;
+  text-align: center;
+  padding: 28rpx 20rpx;
+  box-sizing: border-box; 
+  letter-spacing:2rpx;
+}
+.text-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 186rpx;
+  background: #fff;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  
+  font-family:PingFangSC-Medium;
+  font-size: 30rpx;
+  line-height:42rpx;
+  color: #171F24;
+  padding: 28rpx 20rpx;
+  box-sizing: border-box; 
+  letter-spacing:2rpx;
+}
+.price {
+  margin-top: 65rpx;
+  font-size:30rpx;
+  font-family:FZLANTY_ZHONGCUJW--GB1-0;
+  color:rgba(179,226,32,1);
+  line-height:38rpx;
+  letter-spacing:2rpx;
+}
+.flex-item-video {
+  position: relative;
+  width:690rpx;
+  height:482rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow:0px 18rpx 36rpx 0px rgba(0,0,0,0.1);
+}
+.text-wrap-video {
+  padding: 16rpx 29rpx;
+  height: 109rpx;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+
+  font-size:29rpx;
+  font-family:FZLANTY_XIANJW--GB1-0;
+  font-weight:normal;
+  color:rgba(23,31,36,1);
+  line-height:38rpx;
+  letter-spacing:2rpx;
+  box-sizing: border-box;
+}
+.flex-item2 {
+  position: relative;
+  margin-top: 20rpx;
+  width:690rpx;
+  background: #fff;
+  box-shadow:0px 20px 40px 0px rgba(0,0,0,0.1);
+  border-radius:14rpx;
+  overflow: hidden;
+}
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.image-wrap {
+  width:33%;
+  height:192rpx;
+}
+.title {
+  font-size:29rpx;
+  font-family:FZLANTY_XIANJW--GB1-0;
+  color:rgba(23,31,36,1);
+  line-height:42rpx;
+}
+.title-wrap {
+  padding: 16rpx 27rpx;
+  box-sizing: border-box;
+}
+.content {
+  font-size:24rpx;
+  font-family:FZLANTY_XIANJW--GB1-0;
+  color:rgba(34,34,34,1);
+  line-height:34rpx;
+  letter-spacing:2rpx;
+}
+.content-wrap {
+  padding: 5rpx 27rpx 40rpx;
+  box-sizing: border-box;
+}
+.advertise {
+  height:261rpx;
+}
+.advertise-tag {
+  position: absolute;
+  top: 12rpx;
+  right: 12rpx;
+  
+  padding: 0 10rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  border-radius: 5rpx;
+  background:rgba(255,255,255,0.8);
+  box-shadow:0px 0px 8px 0px rgba(0,0,0,0.5);
+  font-size: 18rpx;
+}
+.icon {
+  position: absolute;
+  top: 10rpx;
+  right: 6rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+.no-pic-title {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.loading {
+  font-size: 28rpx;
+  vertical-align: bottom;
+  font-family:FZLANTY_ZHONGCUJW--GB1-0;
+  text-indent: 1em;
+  background:transparent;
+}

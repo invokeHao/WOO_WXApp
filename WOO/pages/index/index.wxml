@@ -1,0 +1,60 @@
+<view class="container" id="scroller">
+  <view class='time' wx:if="{{ ifTime }}">
+    <text>{{ time }}</text>
+  </view>
+
+  <!-- 流内容 -->
+  <view class='container flex'>
+    <view wx:for="{{ dataList }}" wx:key="index" data-articleid="{{ item.articleId }}" data-groupid="{{ item.group_id }}" data-videoid="{{ item.video_id }}" bindtap='navigate'>
+      <!-- 商品 -->
+      <view class='flex-item1' wx:if="{{ item.articleId }}">
+        <view class='product_image'>
+          <image src='{{ item.multiBodyText.images[0].url }}'></image>
+        </view>
+        <view class='product-text-wrap'>
+          <text class='text-overflow-3line'>{{ item.title }}</text>
+          <view class='price'>{{ '￥' + item.productPriceAmount }}</view>
+        </view>
+        <!-- <image src='../../images/shop_bag.png' class='icon'></image> -->
+      </view>
+
+      <!-- 视频 -->
+      <view class='flex-item-video' wx:if="{{ item.group_id && item.has_video }}">
+        <view class='layer'></view>
+        <image src='{{ item.large_image || item.middle_image }}'></image>
+        <view class='text-wrap-video'>
+          <text class='text-overflow-2line'>{{ item.title }}</text>
+        </view>
+        <image src="../../images/play_button.png" class='icon'></image>
+      </view>
+
+      <!-- 文章（带图片） -->
+      <view class='flex-item2' wx:if="{{ item.group_id && item.image_list.length > 0 }}">
+        <view class='image-container'>
+          <view class='image-wrap'><image src='{{ item.image_list[0].url }}'></image></view>
+          <view class='image-wrap'><image src='{{ item.image_list[1].url }}'></image></view>
+          <view class='image-wrap'><image src='{{ item.image_list[2].url }}'></image></view>
+        </view>
+        <view class="title-wrap">
+          <text class='title text-overflow-2line'>{{ item.title }}</text>
+        </view>
+      </view>
+
+      <!-- 文章（无图片） -->
+      <view class='flex-item2' wx:if="{{ item.group_id && item.image_list.length <= 0 }}">
+        <view class="title-wrap">
+          <text class='title text-overflow-2line no-pic-title'>{{ item.title }}</text>
+        </view>
+        <view class="title-wrap content-wrap">
+          <text class='content text-overflow-2line'>{{ item.abstract }}</text>
+        </view>
+      </view>
+    </view>
+    <button loading class="loading" hidden="{{hidden}}">正在加载...</button>
+    <!-- 12 广告 -->
+    <!-- <view class='flex-item2 advertise'>
+      <text class='advertise-tag'>广告</text>
+      <image src='../../images/demo.jpg'></image>
+    </view> -->
+  </view>
+</view>

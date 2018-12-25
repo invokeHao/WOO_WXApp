@@ -1,0 +1,54 @@
+.scroll-view {
+  height: 100vh;
+  background: #fff;
+}
+.container {
+  padding-top: 0.1px;
+}
+/* 去除滚动条 */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/* 重置样式 */
+button {
+  background: #fff;
+  border-radius: 0;
+}
+button::after {
+  border: none;
+}
+.no-border {
+  border: none!important;
+}
+.text-overflow-2line {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.text-overflow-3line {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.text-overflow-7line {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+/* 蒙层 */
+.layer {
+  position: absolute;
+  top: 0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.8));
+}

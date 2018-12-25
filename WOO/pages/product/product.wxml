@@ -1,0 +1,44 @@
+<view class="container">
+  <scroll-view class='scroll-view' scroll-y>
+    <view class='scroll-container'>
+      <!-- 产品详情上部 -->
+      <view class='product_profile product'>
+        <view class='img-wrap'>
+          <view class='layer'></view>
+          <image src='{{ productDetail.multiBodyText.images[0].url }}'></image>
+          <text class='original_price'>{{ '￥' + productDetail.productPriceAmount }}</text>
+          <text class='detail'>详情</text>
+        </view>
+        
+        <view class='text-wrap'>
+          <text class='text-overflow-2line'>{{ productDetail.title }}</text>
+        </view>
+      </view>
+      <!-- 产品详情下部 -->
+      <view class='product_buy product'>
+        <!-- 返现数据 -->
+        <view class='flex'>
+          <view class='refund'>
+            <text>返现</text>
+            <text class='price'>{{ sliderValue }}</text>
+            <text>元</text>
+          </view> 
+          
+          <view class='attention'>
+            <view>消耗92w</view>
+            <view>剩余10w</view>
+          </view>
+        </view>
+
+        <!-- 进度条 -->
+        <slider min='0' max="{{ max }}" step="1" value="{{ sliderValue }}" backgroundColor="background:rgba(34,34,34,0.15)" activeColor='#B3E220' block-size="30" block-color="#fff" bindchanging="slideChange" class='slide'></slider>
+
+        <!-- 按钮 -->
+        <view class='btn-wrap flex'>
+          <button class='btn shop_bag_btn'>放入购物袋</button>
+          <button class='btn use_now_btn'>现在使用</button>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
